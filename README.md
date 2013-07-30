@@ -1,15 +1,15 @@
-# object-search
+# object-dive
 
-object-search is a tiny module that searches an object for a specified property. If the property is found, its value is returned, otherwise it returns `undefined`.
+object-dive is a tiny module that searches an object for a specified property. If the property is found, its value is returned, otherwise it returns `undefined`.
 
 ## Installation
 
-Run `npm install object-search` to install.
+Run `npm install object-dive` to install.
 
 ## Basic usage
 
 ```javascript
-var objectSearch = require('object-search')
+var objectSearch = require('object-dive')
   , pattern = objectSearch('levelOne.levelTwo')
   , obj = {
       levelOne : {
