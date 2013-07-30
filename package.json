@@ -1,0 +1,23 @@
+{
+  "name": "object-search",
+  "version": "0.0.0",
+  "description": "object-search takes a dot path string argument and searches an object that is then passed in to the returned function. This is useful for verifying that objects have certain properties and for retrieving those properties.",
+  "author": {
+    "name": "Jon de la Motte",
+    "email": "jondlm@gmail.com",
+    "url": "http://jondelamotte.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.3"
+  },
+  "keywords": [
+    "property validation",
+    "object search",
+    "property search"
+  ],
+  "scripts": {
+    "test": "tap ./test/main.js"
+  },
+  "main": "./index"
+}
