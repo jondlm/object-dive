@@ -1,11 +1,15 @@
 {
   "name": "object-dive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "object-dive takes a dot path string argument and searches an object that is then passed in to the returned function. This is useful for verifying that objects have certain properties and for retrieving those properties.",
   "author": {
     "name": "Jon de la Motte",
     "email": "jondlm@gmail.com",
     "url": "http://jondelamotte.com"
+  },
+  "responsitory": {
+    "type": "git",
+    "url": "http://github.com/jondlm/object-dive"
   },
   "dependencies": {},
   "devDependencies": {
@@ -17,7 +21,7 @@
     "property search"
   ],
   "scripts": {
-    "test": "tap ./test/main.js"
+    "test": "node node_modules/tap/bin/tap.js test/main.js"
   },
   "main": "./index"
 }

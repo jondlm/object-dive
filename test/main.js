@@ -25,6 +25,19 @@ tap.test('ensure arrays are returned properly', function(t){
   t.end();
 });
 
+tap.test('ensure objects are returned properly', function(t){
+  var find = objectSearch('one.two')
+    , obj = {
+        one: {
+          two: { thing: 'Birthday Present' }
+        }
+      }
+    , found = find(obj);
+
+  t.deepEqual(found, { thing: 'Birthday Present' }, 'check the returned object is as expected');
+  t.end();
+});
+
 tap.test('make sure undefined is properly returned when a property isnt found', function(t){
   var find = objectSearch('inconsequential')
     , notFound = find({}) || find() || find(null) || find(undefined);
