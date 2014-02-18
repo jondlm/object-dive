@@ -21,7 +21,6 @@ module.exports = function(dotpath){
 //   Takes and object, an array of ordered property names, and a seed `n` value
 function recurse(object, array, fullLength, n) {
   var current = object[array[n]];
-  debugger;
   // if the property doesn't exist, get the hellz out
   if (!object.hasOwnProperty(array[n])){ return undefined; }
 
