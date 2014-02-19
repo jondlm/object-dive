@@ -28,7 +28,7 @@ There is an alternate syntax that can be used. If the second argument passed in
 is an object, the function will return the result of the dive immediately.
 
 ```javascript
-var objectSearch = require('object-dive');
+var od = require('object-dive');
 var obj = {
   levelOne : {
     levelTwo: 'You found me. Have some cake, the cake is a lie'
